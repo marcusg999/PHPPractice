@@ -1,4 +1,10 @@
 <?php
-  $fruit = array('Apple', 'Orange', 'bannana');
+    $fruits = array('Apple', 'Orange', 'bannana');
+
 ?>
-<h1><?php echo $fruit[2]?></h1>
+<ul>
+<?php foreach ($fruits as $fruit): ?>
+  <li><?php echo $fruit;?></li>
+    <?php endforeach; ?>
+</ul>
+
