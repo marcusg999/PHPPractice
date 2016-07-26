@@ -1,10 +1,8 @@
 <?php
-    $fruits = array('Apple', 'Orange', 'bannana');
-
+    function sayIt($words) {
+      echo $words;
+    }
+    sayIt('Hello Again');
 ?>
-<ul>
-<?php foreach ($fruits as $fruit): ?>
-  <li><?php echo $fruit;?></li>
-    <?php endforeach; ?>
-</ul>
+
 
