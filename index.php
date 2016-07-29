@@ -1,4 +1,10 @@
+<?php include 'database.php' ; ?>
+<?php
 
+    $query = "SELECT * FROM shouts";
+    $shouts = mysqli_query($con,$query);
+
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,22 +20,22 @@
               </header>
               <div id="shouts">
                   <ul>
-                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
+
+                    <?php while ($row = mysqli_fetch_assoc($shouts)) : ?>
+                      <li class="shout"><span><?php echo $row['time'] ?> - </span><?php echo $row['user'] ?>: <?php echo $row['message'] ?> </li>
+                    <?php endwhile; ?>
 
                   </ul>
                 </div>
               <div id="input">
                   <form method="post" action="process.php">
-                      <input type="text" name="user" placeholder="Enter your Name">
-                      <input type="text" name="message" placeholder="Enter a message">
-                      <br />
-                      <input class="shout-btn" type="submit" name="submit" value="Shout It Out">
+                      <input type="text" name="user" placeholder="Enter your Name" />
+                      <input type="text" name="message" placeholder="Enter a message" />
+                      <br/>
+                      <input class="shout-btn" type="submit" name="submit" value="Shout It Out" />
+                  </form>
               </div>
-              </div>
+            </div>
       </body>
 </html>
 
