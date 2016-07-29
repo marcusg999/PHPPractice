@@ -14,11 +14,11 @@
               </header>
               <div id="shouts">
                   <ul>
-                      <li class="shout"><span>10:15Pm-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15Pm-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15Pm-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15Pm-</span>Ogun: Hey what are you guys up to? </li>
-                      <li class="shout"><span>10:15Pm-</span>Ogun: Hey what are you guys up to? </li>
+                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
+                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
+                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
+                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
+                      <li class="shout"><span>10:15PM-</span>Ogun: Hey what are you guys up to? </li>
 
                   </ul>
                 </div>
