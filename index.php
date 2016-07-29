@@ -22,13 +22,13 @@
 
                   </ul>
                 </div>
-              </div>
               <div id="input">
                   <form method="post" action="process.php">
                       <input type="text" name="user" placeholder="Enter your Name">
                       <input type="text" name="message" placeholder="Enter a message">
                       <br />
                       <input class="shout-btn" type="submit" name="submit" value="Shout It Out">
+              </div>
               </div>
       </body>
 </html>
