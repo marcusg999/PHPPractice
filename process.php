@@ -21,7 +21,7 @@
         if(!mysqli_query($con, $query)){
                 die ('ERROR:' .mysqli_error($con));
             }else{
-                header("Location: index, php");
+                header("Location: index.php");
                 exit();
           }
       }
