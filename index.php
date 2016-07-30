@@ -24,10 +24,12 @@
                     <?php while ($row = mysqli_fetch_assoc($shouts)) : ?>
                       <li class="shout"><span><?php echo $row['time'] ?> - </span><?php echo $row['user'] ?>: <?php echo $row['message'] ?> </li>
                     <?php endwhile; ?>
-
                   </ul>
                 </div>
               <div id="input">
+                  <?php if(isset($_GET['error'])) : ?>
+                      <div class = "error"><?php echo $_GET['error']; ?></div>
+                  <?php endif; ?>
                   <form method="post" action="process.php">
                       <input type="text" name="user" placeholder="Enter your Name" />
                       <input type="text" name="message" placeholder="Enter a message" />
